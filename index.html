@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data</title>
+    <style>
+        .clear{
+            clear: both;
+        }
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .main{
+            width:700px;
+            height: 400px;
+            border:1px solid red;
+            margin: 0 auto;
+            margin-top: 5%;
+           /* margin: 10px; */
+        }
+        .main .fis{
+            width:300px;
+            height:320px;
+            border:2px solid green;
+           float: left;
+           margin: 10px;
+        }
+        .main .fis .data{
+            width: 200px;
+            height: 200px;
+            border:2px solid rgb(140, 1, 221);
+            margin: 0 auto;
+            margin: 20px;
+            margin-top: 15%;
+            margin-left: 15%;
+        }
+         .main .fis #fist{
+             width: 150px;
+             padding: 5px;
+             margin-left: 22%;
+             cursor: pointer;
+             border: none;
+             color: rgb(255, 255, 255);
+             background: rgb(100, 26, 26);
+         }
+         .main .fis #fist:hover{
+            opacity: 0.9;
+            background: #000;
+         }
+        .main .sec{
+            width:300px;
+            height:320px;
+            border:2px solid rgb(16, 99, 253);
+            float: left;
+           margin: 10px;
+        }
+        .main .sec .pro{
+            width: 200px;
+            height: 200px;
+            border:2px solid rgb(140, 1, 221);
+            margin: 0 auto;
+            margin: 20px;
+            margin-top: 15%;
+            margin-left: 15%;
+        }
+         .main .sec #change{
+             width: 150px;
+             padding: 5px;
+             margin-left: 22%;
+             cursor: pointer;
+             border: none;
+             color: rgb(255, 255, 255);
+             background: rgb(100, 26, 26);
+         }
+         .main .sec #change:hover{
+            opacity: 0.9;
+            background: #000;
+         }
+         #demo{
+             text-align: center;
+             margin-top: 40%;
+             font-size:1rem;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+         #bid{
+             text-align: center;
+             margin-top: 1%;
+             font-size:1rem;
+             font-family: monospace;
+         }
+         img{
+             display: none;
+            
+         }
+         .main .mygood{
+             margin:30px 0px 0px 30px;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="mygood">
+            <div class="fis">
+                <div class="data">
+                    <h3 id="demo"></h3>
+                </div>
+                <button id="fist">Click Me</button>
+            </div>
+    
+            <!-- fis End Here-->
+            <div class="sec">
+                <div class="pro">
+                    <img src="mypic.jpg" alt="" id="pic">
+                   
+                </div>
+                <h3 id="bid"></h3>   
+            </div>
+    
+            <!-- sec End Here-->
+            <div class="clear"></div>
+        </div>
+    </div>
+ <script src="main.js"></script>
+</body>
+</html>
